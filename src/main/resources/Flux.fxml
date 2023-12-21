@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="482.0" prefWidth="436.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Flux">
+   <children>
+      <TabPane layoutX="20.0" layoutY="73.0" prefHeight="388.0" prefWidth="380.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Home">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text layoutX="16.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Stats">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="YourName" layoutX="16.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your username is: ">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="YourRespects" layoutX="16.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your respects: ">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="YourRewardPoints" layoutX="16.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your reward points: ">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="YourGender" layoutX="16.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Your gender: ">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Text>
+                        <Button layoutX="16.0" layoutY="200.0" mnemonicParsing="false" onAction="#restoreoriginallooklistener" prefHeight="41.0" prefWidth="184.0" text="Restore Original Look" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Tools">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <CheckBox fx:id="AntiKick" layoutX="17.0" layoutY="20.0" mnemonicParsing="false" text="Anti Kick" />
+                        <CheckBox fx:id="AntiLookPoint" layoutX="17.0" layoutY="50.0" mnemonicParsing="false" text="Anti Look Point" />
+                        <CheckBox fx:id="AntiTrade" layoutX="17.0" layoutY="80.0" mnemonicParsing="false" text="Anti Trade" />
+                        <CheckBox fx:id="NoTyping" layoutX="17.0" layoutY="110.0" mnemonicParsing="false" text="No Typing" />
+                        <CheckBox fx:id="FakeRespects" layoutX="17.0" layoutY="140.0" mnemonicParsing="false" text="Fake Respects" />
+                        <CheckBox fx:id="ClickThrough" layoutX="17.0" layoutY="170.0" mnemonicParsing="false" onAction="#handleClickThrough" text="Click Through" />
+                        <CheckBox fx:id="AntiAfk" layoutX="17.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleantiafk" text="Anti AFK" />
+                        <CheckBox fx:id="Grinding" layoutX="17.0" layoutY="230.0" mnemonicParsing="false" onAction="#handlegrinding" text="Grinding" />
+                        <CheckBox fx:id="Derp" layoutX="17.0" layoutY="260.0" mnemonicParsing="false" onAction="#handlederp" text="Derp" />
+                        <CheckBox fx:id="UserClipboard" layoutX="17.0" layoutY="290.0" mnemonicParsing="false" text="Username Clipboard" />
+                        <CheckBox fx:id="UserClipboardExt" layoutX="17.0" layoutY="320.0" mnemonicParsing="false" text="Username Clipboard With Extended Profile" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Tools OSINT">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <CheckBox fx:id="UserGoogle" layoutX="17.0" layoutY="20.0" mnemonicParsing="false" text="Search Username In Google" />
+                        <CheckBox fx:id="UserGoogleExt" layoutX="17.0" layoutY="50.0" mnemonicParsing="false" text="Search Username In Google With Extended Profile" />
+                        <CheckBox fx:id="UserWhatsMyName" layoutX="17.0" layoutY="80.0" mnemonicParsing="false" text="Search Username In WhatsMyName" />
+                        <CheckBox fx:id="UserWhatsMyNameExt" layoutX="17.0" layoutY="110.0" mnemonicParsing="false" text="Search Username In WhatsMyName With Extended Profile" />
+                        <CheckBox fx:id="UserIDCrawl" layoutX="17.0" layoutY="140.0" mnemonicParsing="false" text="Search Username In IDCrawl" />
+                        <CheckBox fx:id="UserIDCrawlExt" layoutX="17.0" layoutY="170.0" mnemonicParsing="false" text="Search Username In IDCrawl With Extended Profile" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Text layoutX="22.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Flux">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
